@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="PPE <= 0.134\nentropy = 0.748\nsamples = 136\nvalue = [29, 107]\nclass = 1"] ;
+1 [label="MDVP:Fhi(Hz) <= 228.85\nentropy = 0.837\nsamples = 30\nvalue = [22, 8]\nclass = 0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="DFA <= 0.727\nentropy = 0.997\nsamples = 15\nvalue = [7, 8]\nclass = 1"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 6\nvalue = [0, 6]\nclass = 1"] ;
+2 -> 3 ;
+4 [label="entropy = 0.764\nsamples = 9\nvalue = [7, 2]\nclass = 0"] ;
+2 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 15\nvalue = [15, 0]\nclass = 0"] ;
+1 -> 5 ;
+6 [label="Shimmer:APQ3 <= 0.009\nentropy = 0.351\nsamples = 106\nvalue = [7, 99]\nclass = 1"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="MDVP:Fo(Hz) <= 117.986\nentropy = 0.845\nsamples = 22\nvalue = [6, 16]\nclass = 1"] ;
+6 -> 7 ;
+8 [label="entropy = 0.592\nsamples = 7\nvalue = [6, 1]\nclass = 0"] ;
+7 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 15\nvalue = [0, 15]\nclass = 1"] ;
+7 -> 9 ;
+10 [label="MDVP:Fo(Hz) <= 202.588\nentropy = 0.093\nsamples = 84\nvalue = [1, 83]\nclass = 1"] ;
+6 -> 10 ;
+11 [label="entropy = 0.0\nsamples = 79\nvalue = [0, 79]\nclass = 1"] ;
+10 -> 11 ;
+12 [label="entropy = 0.722\nsamples = 5\nvalue = [1, 4]\nclass = 1"] ;
+10 -> 12 ;
+}
